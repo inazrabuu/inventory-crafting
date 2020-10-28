@@ -10,12 +10,12 @@ public class Item
     public Sprite icon;
     public Dictionary<string, int> stats = new Dictionary<string, int>();
 
-    public Item(int id, string title, string description, Sprite icon, Dictionary<string, int> stats)
+    public Item(int id, string title, string description, Dictionary<string, int> stats)
     {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.icon = icon;
+        this.icon = Resources.Load<Sprite>(string.Format("Items/{0}.png", this.title));
         this.stats = stats;
     }
 
