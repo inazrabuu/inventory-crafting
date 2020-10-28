@@ -15,7 +15,7 @@ public class Item
         this.id = id;
         this.title = title;
         this.description = description;
-        this.icon = Resources.Load<Sprite>(string.Format("Items/{0}.png", this.title));
+        this.icon = Resources.Load<Sprite>(string.Format("Items/{0}", this.title));
         this.stats = stats;
     }
 
