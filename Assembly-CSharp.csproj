@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CraftRecipe.cs" />
     <Compile Include="Assets\Scripts\CraftRecipeDatabase.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemDatabase.cs" />
     <Reference Include="UnityEngine">
