@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 1
-  controlID: 119
+  controlID: 86
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 120
+  controlID: 87
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 121
+  controlID: 22
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 68
+  controlID: 88
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -491,9 +491,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 921.8503, y: 510.79102, z: -185.10422}
+    m_Target: {x: 334.2087, y: 506.88086, z: -259.71796}
     speed: 2
-    m_Value: {x: 921.8503, y: 510.79102, z: -185.10422}
+    m_Value: {x: 334.2087, y: 506.88086, z: -259.71796}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -543,9 +543,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 355.26938
+    m_Target: 184.17491
     speed: 2
-    m_Value: 355.26938
+    m_Value: 184.17491
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 28920
+  m_LastSelectedObjectID: -20518
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 884b0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 46f9feffeef9feff6e02fffffe03ffffca10ffff381ffffffa20ffff7825ffffa626ffff282cffffb42cffff4c2dfffff62dffff842effff2a2fffffb432ffff2434ffff8c41ffffe841ffff6e4fffff764fffff0c50ffff2283ffffb089ffffde89ffffee89fffffa89ffff5a8affff6e8bffffac8bffffb88cffffc28cffffe6b3ffffe8b3ffff76b4fffff0faffffae530000d2550000e0550000e65500003256000038560000085b0000505b00005a5b0000765b0000e45d0000e65e0000f860000024610000226200006a62000074620000906200009a620000b46200004667000098670000b4670000be670000d2670000d8670000ac6b0000ba6b0000e66b00000c6c0000027100004a7100005471000070710000347700007c77000086770000a2770000
+      m_SelectedIDs: daafffff
+      m_LastClickedID: -20518
+      m_ExpandedIDs: 481dffff6026ffff5055ffff1656ffff2856ffff3a56ffffb259ffff808bffff6292ffff8ed6ffffe0ebffff9cedffffa6edfffff0faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -837,12 +837,12 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Characters
+    - Assets/Scripts
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/arman/proj/unity/Turn-Based Battle
+  m_LastProjectPath: /Users/arman/proj/unity/Inventory & Crafting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -874,24 +874,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 60}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000007e480000a2480000a8480000ae480000684b00004a4f00004e4f0000
+    m_ExpandedIDs: ffffffff000000007e480000a8480000ae480000be4e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: BattleLauncherDemo
-      m_OriginalName: BattleLauncherDemo
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 21224
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 

@@ -9,9 +9,14 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
     public Item item;
     private Image _spriteImage;
     private UIItem _selectedItem;
+    public bool craftingSlot;
+    private CraftingSlotPanel _craftingSlotPanel;
+    [SerializeField]
+    private bool _craftingResultSlot;
 
     private void Awake()
     {
+        _craftingSlotPanel = FindObjectOfType<CraftingSlotPanel>();
         _selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         _spriteImage = GetComponent<Image>();
         UpdateItem(null);
@@ -28,23 +33,38 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
         {
             _spriteImage.color = Color.clear;
         }
+
+        if (craftingSlot)
+        {
+            _craftingSlotPanel.UpdateRecipe();
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         if (this.item != null)
         {
-            if (_selectedItem.item != null)
+            UICraftResult craftResult = GetComponent<UICraftResult>();
+            if (craftResult != null && this.item != null && _selectedItem.item == null)
             {
-                Item clone = new Item(_selectedItem.item);
+                craftResult.PickItem();
                 _selectedItem.UpdateItem(this.item);
-                UpdateItem(clone);
-            } else
+                craftResult.ClearSlots();
+            } else if (!_craftingResultSlot)
             {
-                _selectedItem.UpdateItem(this.item);
-                UpdateItem(null);
+                if (_selectedItem.item != null)
+                {
+                    Item clone = new Item(_selectedItem.item);
+                    _selectedItem.UpdateItem(this.item);
+                    UpdateItem(clone);
+                }
+                else
+                {
+                    _selectedItem.UpdateItem(this.item);
+                    UpdateItem(null);
+                }
             }
-        } else
+        } else if (_selectedItem.item != null && !_craftingResultSlot)
         {
             UpdateItem(_selectedItem.item);
             _selectedItem.UpdateItem(null);

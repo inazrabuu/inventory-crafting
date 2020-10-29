@@ -45,4 +45,9 @@ public class SlotPanel : MonoBehaviour
 
         return false;
     }
+
+    public void EmptyAllSlots()
+    {
+        uiItems.ForEach(i => i.UpdateItem(null));
+    }
 }
