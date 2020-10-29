@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class UIItem : MonoBehaviour, IPointerDownHandler
+public class UIItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Item item;
     private Image _spriteImage;
@@ -13,12 +13,14 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
     private CraftingSlotPanel _craftingSlotPanel;
     [SerializeField]
     private bool _craftingResultSlot;
+    private Tooltip _tooltip;
 
     private void Awake()
     {
         _craftingSlotPanel = FindObjectOfType<CraftingSlotPanel>();
         _selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         _spriteImage = GetComponent<Image>();
+        _tooltip = FindObjectOfType<Tooltip>();
         UpdateItem(null);
     }
 
@@ -69,5 +71,18 @@ public class UIItem : MonoBehaviour, IPointerDownHandler
             UpdateItem(_selectedItem.item);
             _selectedItem.UpdateItem(null);
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (this.item != null)
+        {
+            _tooltip.GenerateTooltip(item);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        _tooltip.gameObject.SetActive(false);
     }
 }

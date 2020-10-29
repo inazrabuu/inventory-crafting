@@ -19,6 +19,12 @@ public class Inventory : MonoBehaviour
         GiveItem(1);
         GiveItem(2);
         GiveItem(3);
+        GiveItem(1);
+        GiveItem(2);
+        GiveItem(3);
+        GiveItem(1);
+        GiveItem(2);
+        GiveItem(3);
     }
 
     public void GiveItem(int id)
